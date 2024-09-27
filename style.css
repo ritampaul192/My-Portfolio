@@ -31,7 +31,7 @@ h2 {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-decoration:underline;
+    text-decoration: underline;
 
 }
 
@@ -44,7 +44,7 @@ h3 {
 
 header {
     box-sizing: border-box;
-    border-radius:8px;
+    border-radius: 8px;
     border: 3px solid #ff1e00;
     /* padding: 2px; */
     padding: 10px;
@@ -69,11 +69,13 @@ header {
 .sociallinks a:visited {
     color: #f5cc9e;
 }
-.servicelinks a:link{
-    color:#921b29
+
+.servicelinks a:link {
+    color: #921b29
 }
-.servicelinks a:visited{
-    color:#f16878
+
+.servicelinks a:visited {
+    color: #f16878
 }
 
 nav ul {
@@ -123,6 +125,7 @@ nav ul li {
     background-clip: text;
     color: transparent;
 }
+
 .section2 p {
     width: 100%;
     margin: 15px 0;
@@ -173,41 +176,49 @@ nav ul li {
     text-align: left;
 }
 
-footer{
+footer {
     padding: 10px;
 }
-footer h3{
-    color:#ee1f1f;
+
+footer h3 {
+    color: #ee1f1f;
     text-decoration: underline;
 }
-footer form{
+
+footer form {
     border-radius: 10px;
     background-color: #ffe6e6;
     box-sizing: border-box;
     padding: 40px;
     border: 2px solid rgb(58, 31, 28);
 }
-footer div{
+
+footer div {
     box-sizing: border-box;
-    margin:20px;
+    margin: 20px;
     padding: 10px;
 }
-form input{
+
+form input {
     border-radius: 5px;
 }
-form textarea{
+
+form textarea {
     border-radius: 5px;
 }
-form button{
+
+form button {
     border: 2px solid rgb(155, 30, 7);
     border-radius: 5px;
     padding: 2px;
     color: beige;
     background-color: #ee3e52;
 }
-hr{
+
+hr {
     border: 1px dashed rgb(165, 3, 3);
 }
+
 @media (max-width: 768px) {
     header {
         padding: 15px;
@@ -249,5 +260,35 @@ hr{
     .leftsection img {
         width: 80%;
         /* Reduce image size on smaller screens */
+    }
+
+    footer form {
+        padding: 20px;
+        width: 90%;
+        /* Allow form to take most of the screen width */
+        margin: 0 auto;
+        /* Center the form */
+    }
+
+    footer div {
+        padding: 10px;
+        margin: 10px 0;
+        /* Reduce margins for better spacing on small screens */
+        width: 100%;
+        /* Ensure form fields take up the full width */
+    }
+
+    form input,
+    form textarea,
+    form button {
+        width: 100%;
+        /* Make inputs and textarea fill the container */
+        margin-top: 10px;
+        /* Add spacing between fields */
+    }
+
+    form button {
+        padding: 10px;
+        font-size: 1rem;
     }
 }
