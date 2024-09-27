@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FCF6F5;
+    color: black;
+    font-family: "Poppins", sans-serif;
+}
+
+h1.center {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    color: beige;
+    font-size: 2rem;
+}
+
+h2 {
+    font: "Baloo Bhaijaan 2", sans-serif;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: auto;
+    background: linear-gradient(to top, rgb(173, 58, 29), rgb(255, 39, 1));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-decoration:underline;
+
+}
+
+h3 {
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: beige;
+}
+
+header {
+    box-sizing: border-box;
+    border-radius:8px;
+    border: 3px solid #ff1e00;
+    /* padding: 2px; */
+    padding: 10px;
+    /*Increased padding for smaller screens*/
+    background-color: #990011;
+    text-align: center;
+    /* Ensure text is centered on smaller screens */
+}
+
+.weblinks a:link {
+    color: #ff9da8;
+}
+
+.weblinks a:visited {
+    color: #f5cc9e;
+}
+
+.sociallinks a:link {
+    color: #ff9da8;
+}
+
+.sociallinks a:visited {
+    color: #f5cc9e;
+}
+.servicelinks a:link{
+    color:#921b29
+}
+.servicelinks a:visited{
+    color:#f16878
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+.section1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Allow elements to wrap on smaller screens */
+    margin: 30px 10px;
+    /* Adjust margin for smaller devices */
+}
+
+.section1>div {
+    width: 100%;
+    /* Make the image responsive */
+    /* background-color: red; */
+    max-width: 300px;
+    /* Prevents the image from getting too large */
+    height: auto;
+}
+
+.leftsection img {
+    width: 100%;
+}
+
+.rightsection {
+    font-size: 3.5rem;
+    margin: 30px 0;
+}
+
+.darkred {
+    font-size: 4rem;
+    background: linear-gradient(to top, rgb(66, 0, 0), rgb(255, 39, 1));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.section2 p {
+    width: 100%;
+    margin: 15px 0;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+.section3 {
+    /* background-color: aqua; */
+    border-radius: 20px;
+    border: 2px solid#ce0b0b;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Allow elements to wrap on smaller screens */
+    margin: 30px 10px;
+}
+
+.section3 span {
+    border-radius: 20px;
+    width: 100%;
+    margin: 10px;
+    padding: 20px;
+    align-items: center;
+    background-color: #f75a5a;
+}
+
+.project {
+    text-align: center;
+}
+
+.section4 ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.section4 ul li {
+    margin: 0 10px;
+    padding: 20px;
+}
+
+.section5 form {
+    text-align: left;
+}
+
+footer{
+    padding: 10px;
+}
+footer h3{
+    color:#ee1f1f;
+    text-decoration: underline;
+}
+footer form{
+    border-radius: 10px;
+    background-color: #ffe6e6;
+    box-sizing: border-box;
+    padding: 40px;
+    border: 2px solid rgb(58, 31, 28);
+}
+footer div{
+    box-sizing: border-box;
+    margin:20px;
+    padding: 10px;
+}
+form input{
+    border-radius: 5px;
+}
+form textarea{
+    border-radius: 5px;
+}
+form button{
+    border: 2px solid rgb(155, 30, 7);
+    border-radius: 5px;
+    padding: 2px;
+    color: beige;
+    background-color: #ee3e52;
+}
+hr{
+    border: 1px dashed rgb(165, 3, 3);
+}
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+        /* Increase padding to make the header more readable */
+    }
+
+    nav ul {
+        flex-direction: column;
+        /* Stack nav items vertically */
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        /* Adjust margin for smaller screens */
+        font-size: 0.9rem;
+    }
+
+    .rightsection {
+        font-size: 2.5rem;
+        /* Adjust the font size for smaller screens */
+        text-align: center;
+    }
+
+    .section1 {
+        flex-direction: column;
+        /* Stack the content vertically */
+        margin: 20px 5px;
+        /* Reduce margins for mobile devices */
+    }
+
+    .section1>div {
+        width: 90%;
+        /* Ensure each section takes up most of the screen */
+        max-width: 100%;
+        /* Remove maximum width restriction for mobile */
+
+    }
+
+    .leftsection img {
+        width: 80%;
+        /* Reduce image size on smaller screens */
+    }
+}

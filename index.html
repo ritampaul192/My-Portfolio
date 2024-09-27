@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritam's portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Poppins:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <meta name="description" content="This is my First Portfolio using HTML and CSS">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #FCF6F5;
+            color: black;
+            font-family: "Poppins", sans-serif;
+        }
+
+        h1.center {
+            font-family: "Oswald", sans-serif;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5px;
+            color: beige;
+            font-size: 2rem;
+        }
+
+        h2 {
+            font: "Baloo Bhaijaan 2", sans-serif;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: auto;
+            background: linear-gradient(to top, rgb(173, 58, 29), rgb(255, 39, 1));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-decoration:underline;
+
+        }
+
+        h3 {
+            font-family: "Nunito", sans-serif;
+            font-weight: 500;
+            font-style: italic;
+            color: beige;
+        }
+
+        header {
+            box-sizing: border-box;
+            border-radius:8px;
+            border: 3px solid #ff1e00;
+            /* padding: 2px; */
+            padding: 10px;
+            /*Increased padding for smaller screens*/
+            background-color: #990011;
+            text-align: center;
+            /* Ensure text is centered on smaller screens */
+        }
+
+        .weblinks a:link {
+            color: #ff9da8;
+        }
+
+        .weblinks a:visited {
+            color: #f5cc9e;
+        }
+
+        .sociallinks a:link {
+            color: #ff9da8;
+        }
+
+        .sociallinks a:visited {
+            color: #f5cc9e;
+        }
+        .servicelinks a:link{
+            color:#921b29
+        }
+        .servicelinks a:visited{
+            color:#f16878
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        .section1 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            /* Allow elements to wrap on smaller screens */
+            margin: 30px 10px;
+            /* Adjust margin for smaller devices */
+        }
+
+        .section1>div {
+            width: 100%;
+            /* Make the image responsive */
+            /* background-color: red; */
+            max-width: 300px;
+            /* Prevents the image from getting too large */
+            height: auto;
+        }
+
+        .leftsection img {
+            width: 100%;
+        }
+
+        .rightsection {
+            font-size: 3.5rem;
+            margin: 30px 0;
+        }
+
+        .darkred {
+            font-size: 4rem;
+            background: linear-gradient(to top, rgb(66, 0, 0), rgb(255, 39, 1));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .section2 p {
+            width: 100%;
+            margin: 15px 0;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+
+        .section3 {
+            /* background-color: aqua; */
+            border-radius: 20px;
+            border: 2px solid#ce0b0b;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            /* Allow elements to wrap on smaller screens */
+            margin: 30px 10px;
+        }
+
+        .section3 span {
+            border-radius: 20px;
+            width: 100%;
+            margin: 10px;
+            padding: 20px;
+            align-items: center;
+            background-color: #f75a5a;
+        }
+
+        .project {
+            text-align: center;
+        }
+
+        .section4 ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+
+        .section4 ul li {
+            margin: 0 10px;
+            padding: 20px;
+        }
+
+        .section5 form {
+            text-align: left;
+        }
+
+        footer{
+            padding: 10px;
+        }
+        footer h3{
+            color:#ee1f1f;
+            text-decoration: underline;
+        }
+        footer form{
+            border-radius: 10px;
+            background-color: #ffe6e6;
+            box-sizing: border-box;
+            padding: 40px;
+            border: 2px solid rgb(58, 31, 28);
+        }
+        footer div{
+            box-sizing: border-box;
+            margin:20px;
+            padding: 10px;
+        }
+        form input{
+            border-radius: 5px;
+        }
+        form textarea{
+            border-radius: 5px;
+        }
+        form button{
+            border: 2px solid rgb(155, 30, 7);
+            border-radius: 5px;
+            padding: 2px;
+            color: beige;
+            background-color: #ee3e52;
+        }
+        hr{
+            border: 1px dashed rgb(165, 3, 3);
+        }
+        @media (max-width: 768px) {
+            header {
+                padding: 15px;
+                /* Increase padding to make the header more readable */
+            }
+
+            nav ul {
+                flex-direction: column;
+                /* Stack nav items vertically */
+            }
+
+            nav ul li {
+                margin: 10px 0;
+                /* Adjust margin for smaller screens */
+                font-size: 0.9rem;
+            }
+
+            .rightsection {
+                font-size: 2.5rem;
+                /* Adjust the font size for smaller screens */
+                text-align: center;
+            }
+
+            .section1 {
+                flex-direction: column;
+                /* Stack the content vertically */
+                margin: 20px 5px;
+                /* Reduce margins for mobile devices */
+            }
+
+            .section1>div {
+                width: 90%;
+                /* Ensure each section takes up most of the screen */
+                max-width: 100%;
+                /* Remove maximum width restriction for mobile */
+
+            }
+
+            .leftsection img {
+                width: 80%;
+                /* Reduce image size on smaller screens */
+            }
+            footer form{
+                padding: 20px;
+                width: 90%;
+                /* Allow form to take most of the screen width */
+                margin: 0 auto;/* Center the form */
+            }
+            footer div{
+                padding: 10px;
+                margin: 10px 0;/* Reduce margins for better spacing on small screens */
+                width:100%;/* Ensure form fields take up the full width */
+            }
+            form input, form textarea, form button{
+                width: 100%;/* Make inputs and textarea fill the container */
+                margin-top: 10px; /* Add spacing between fields */
+            }
+            form button{
+                padding: 10px;
+                font-size: 1rem;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header id="home">
+        <h1 class="center">My Portfolio</h1>
+        <nav>
+            <ul>
+                <ul class="weblinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+                <ul class="sociallinks">
+                    <li><a href="https://www.linkedin.com/" target="_blank">Linkedin</a></li>
+                    <li><a href="https://github.com/" target="_blank">Github</a></li>
+                    <li><a href="https://x.com/" target="_blank">Twitter</a></li>
+                    <li><a href="https://leetcode.com/" target="_blank">Leetcode</a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section1">
+            <div class="leftsection">
+                <img src="profile.png" alt="profile pic">
+            </div>
+
+            <div class="rightsection">
+                <div>
+                    Hello! Myself
+                    <span class="darkred">Ritam Paul</span>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="about" class="section2">
+            <h2>About</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur nemo in quibusdam voluptate iste
+                commodi, quam molestias sit totam unde magni illum atque quo voluptatibus deserunt repellendus eaque
+                fugit ad! Tempore id commodi ratione dolorum ipsum libero nihil dolorem necessitatibus et quidem. Animi
+                perspiciatis esse quos voluptatum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ut
+                praesentium, sed doloribus iusto numquam iste. Autem culpa, architecto nisi magni assumenda nam.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae optio dolorem molestiae, aliquid enim
+                error, ipsa eius nihil, ab tempora non laborum? Magnam.
+            </p>
+        </section>
+
+        <hr>
+
+        <h2>Projects</h2>
+        <section id="projects" class="section3">
+            <span class="project">
+                <h3>Project 1</h3>
+                <div>
+                    Project Description
+                </div>
+            </span>
+            <span class="project"></div>
+                <h3>Project 2</h3>
+                <div>Project Description</div>
+            </span>
+            <span class="project"></div>
+                <h3>Project 3</h3>
+                <div>Project Description</div>
+            </span>
+            <span class="project"></div>
+                <h3>Project 4</h3>
+                <div>Project Description</div>
+            </span>
+        </section>
+
+        <hr>
+        <section id="services" class="section4">
+            <h2>Services</h2>
+            <div>
+                <ul class="servicelinks">
+                    <li><a href="service1" target="_blank">Service1</a></li>
+                    <li><a href="service2" target="_blank">Service2</a></li>
+                    <li><a href="service3" target="_blank">Service3</a></li>
+                    <li><a href="service4" target="_blank">Service4</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <h2>Contact Me</h2>
+        <section id="contact" class="section5">
+            <form action="post">
+                <h3>Please fill this form</h3>
+                <div>
+                    <label for="firstname">First Name:</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="Enter Your First Name" required>
+                    <label for="surname">Sur Name:</label>
+                    <input type="text" name="surname" id="surname" placeholder="Enter Your Sur Name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email" placeholder="Enter Your Email" required>
+                </div>
+                <div>
+                    <label for="subject">Subject</label>
+                    <input type="subject" name="subject" id="subject" placeholder="Enter Subject">
+                </div>
+                <div>
+                    <label for="Message">Enter Your Message:</label>
+                    <textarea name="message" id="message" rows="2" column="30"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" name="checkbox" id="checkbox" value="yes">
+                    <label for="checkbox">I want you to work on a project with me</label>
+                </div>
+                <div>
+                    <button>Submit</button>
+                </div>
+            </form>
+        </section>
+    </footer>
+</body>
+
+</html>
